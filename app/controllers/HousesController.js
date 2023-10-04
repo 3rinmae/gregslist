@@ -13,7 +13,12 @@ export class HousesController {
   constructor() {
     // console.log('HousesController loading')
     _drawHouses()
+
+    AppState.on('houses', _drawHouses)
   }
 
+  createHouse(event){
+    
+  }
 
 }

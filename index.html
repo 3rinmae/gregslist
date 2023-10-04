@@ -52,7 +52,62 @@
         </div>
       </section>
 
-      <section id="houses" class="row">
+      <section class="row justify-content-center">
+        <div class="col-12 col-md-8 p-4">
+          <form onsubmit="app.HousesController.createHouse(event)">
+
+            <div class="mb-2">
+              <label for="name">Style of Home</label>
+              <input id="name" name="name" type="text" required minlength="3" maxlength="25" placeholder="Victorian">
+            </div>
+
+            <div class="mb-2">
+              <label for="price">Price</label>
+              <input id="price" name="price" type="number" required min="0" max="10000000" placeholder="$100,000">
+            </div>
+
+            <div class="mb-2">
+              <label for="year">Year built</label>
+              <input id="year" name="year" type="number" required min="1800" max="2024" placeholder="1999">
+            </div>
+
+            <div class="mb-2">
+              <label for="sqft">Sqft</label>
+              <input id="sqft" name="sqft" type="number" required min="1" max="20000" placeholder="1700">
+            </div>
+
+            <div class="mb-2">
+              <label for="bedrooms">Bedrooms</label>
+              <input id="bedrooms" name="bedrooms" type="number" required min="0" max="15" placeholder="3">
+            </div>
+
+            <div class="mb-2">
+              <label for="bathrooms">Bathrooms</label>
+              <input id="bathrooms" name="bathrooms" type="number" required min="0" max="15" placeholder="1.5">
+            </div>
+
+            <div class="mb-2">
+              <label for="imgUrl">Image URL</label>
+              <input id="imgUrl" type="url" required maxlength="500" name="imgUrl" placeholder="House ImgUrl...">
+            </div>
+
+            <div class="mb-2">
+              <label for="description">Description</label>
+              <textarea name="description" id="description" rows="5" placeholder="House Description..."
+                maxlength="300"></textarea>
+            </div>
+
+            <div>
+              <button class="btn btn-success" type="submit">Submit</button>
+            </div>
+
+          </form>
+        </div>
+
+      </section>
+
+
+      <section id="houses" class="row justify-content-center">
         <!-- <div class="col-10 mb-3">
           <div class="d-flex shadow">
             <img class="car-img" src="${this.imgUrl}" alt="${this.name}">

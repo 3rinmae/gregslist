@@ -1,33 +1,33 @@
 /* BASIC STYLES HERE */
 
-label{
+label {
   display: block;
 }
 
-input{
+input {
   width: 100%;
 }
 
-textarea{
-  width: 50%;
+textarea {
+  width: 75%;
 }
 
-.checkbox{
+.checkbox {
   width: auto;
 }
 
-.color{
+.color {
   width: 10vw;
 
 }
 
-.car-img{
+.car-img {
   height: 40vh;
   width: 30%;
   object-fit: cover;
 }
 
-.car-border{
+.car-border {
   border-style: solid;
   border-width: 5px;
 }
