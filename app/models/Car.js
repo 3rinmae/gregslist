@@ -4,7 +4,7 @@ export class Car {
   /**
    * @param {{ year: number; make: string; model: string; mileage: number; runs: boolean; imgUrl: string; isNew: boolean; price: number; color: string; description: string; listedAt?: Date }} data
    */
-  constructor (data) {
+  constructor(data) {
     this.id = generateId()
     this.make = data.make
     this.model = data.model
